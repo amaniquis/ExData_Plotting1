@@ -6,7 +6,7 @@ datetime <- strptime(paste(data$Date, data$Time, sep = " "),
                      "%d/%m/%Y %H:%M:%S")
 data <- cbind(data, datetime)
 
-png("plot3.png", width = 480, height = 480)
+png("plot3.png", width = 480, height = 480, bg = "transparent")
 
 with(data,
      plot(datetime, Sub_metering_1, xlab = "", ylab = "Energy sub metering",

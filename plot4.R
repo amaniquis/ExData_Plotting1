@@ -6,7 +6,7 @@ datetime <- strptime(paste(data$Date, data$Time, sep = " "),
                      "%d/%m/%Y %H:%M:%S")
 data <- cbind(data, datetime)
 
-png("plot4.png", width = 480, height = 480)
+png("plot4.png", width = 480, height = 480, bg = "transparent")
 
 par(mfcol = c(2, 2))
 
